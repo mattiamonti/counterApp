@@ -5,20 +5,44 @@ body {
 }
 
 .App {
-    margin-top: 12.5vh;
+    margin-top: 15vh;
 }
 
 .card1,
-.card2,
-.card3 {
-    width: 50vw;
-    height: 20vh;
+.card2 {
+    width: 60vw;
+    height: 30vh;
     border-radius: 10px;
     display: flex;
     justify-items: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 5vh;
+    margin-top: 10vh;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.arrdx,
+.arrsx {
+    height: 40px;
+    color: #24272f;
+}
+.arrdx:active,
+.arrsx:active {
+    color: #363942;
+}
+
+.resetButton {
+    color: #24272f;
+    margin-left: 85%;
+    height: 40px;
+}
+.resetButton:active {
+    color: #363942;
 }
 
 span {
@@ -26,20 +50,15 @@ span {
     margin-right: 10vw;
 
     font-family: "Ubuntu", sans-serif;
-    font-size: 20px;
+    font-size: 27px;
+    font-weight: bolder;
+    color: #1f1f20;
 }
 
 h2 {
     font-family: "Ubuntu", sans-serif;
-    font-size: 25px;
-}
-
-button {
-    background-color: #24272f;
-    color: white;
-}
-button:active {
-    background-color: #363942;
+    font-size: 30px;
+    color: #1f1f20;
 }
 
 .card1 {
@@ -50,31 +69,28 @@ button:active {
     background-color: #36dbd9;
 }
 
-.card3 {
-    background-color: #909cff;
-}
-
 @media (max-width: 500px) {
     .App {
-        margin-top: 5vh;
+        margin-top: 10vh;
         -webkit-tap-highlight-color: "transparent";
     }
 
     .card1,
-    .card2,
-    .card3 {
+    .card2 {
         width: 90vw;
-        height: 25vh;
-        margin-top: 5vh;
+        height: 35vh;
     }
     h2 {
-        margin: 3vh;
-        font-size: 45px;
-    }
-    button {
-        font-size: 25px;
+        margin-top: 5vh;
+        font-size: 50px;
     }
     span {
-        font-size: 40px;
+        font-size: 47px;
+    }
+
+    .arrdx,
+    .arrsx {
+        height: 47px;
+        color: #24272f;
     }
 }
